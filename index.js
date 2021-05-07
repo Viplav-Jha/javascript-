@@ -82,3 +82,6 @@ console.log("viplav"-"jha"); //NaN
 ----------------------------------------------------------------------
 // 🙋‍👨‍🏫 Interview Question 1 🙋‍👨‍🏫
 // var vs let vs const
+var employee ="John Sam Roy Lucky Bob"
+var res= employee.substr(-4);
+console.log(res);
