@@ -79,3 +79,6 @@ console.log("viplav"-"jha"); //NaN
 
 
 // console.log(isNaN(Number.NaN));
+----------------------------------------------------------------------
+// 🙋‍👨‍🏫 Interview Question 1 🙋‍👨‍🏫
+// var vs let vs const
