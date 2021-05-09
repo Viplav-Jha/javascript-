@@ -85,3 +85,23 @@ console.log("viplav"-"jha"); //NaN
 var employee ="John Sam Roy Lucky Bob"
 var res= employee.substr(-4);
 console.log(res);
+--------------------------------------------------------------------------------
+// ASYN method
+
+const getCountriesData = async () => {
+    fetch("https://disease.sh/v3/covid-19/countries")
+      .then((response) => response.json())
+      .then((data) => {
+        const countries = data.map((country) => ({
+          name: country.country,
+          value: country.countryInfo.iso2,
+        }));
+
+        let sortedData = sortData(data);
+          setCountries(countries);
+          setMapCountries(data);
+          setTableData(sortedData);
+        });
+    };
+
+    getCountriesData();
